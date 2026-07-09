@@ -18,7 +18,7 @@ const icones = {
     lendo: "\uD83D\uDCD1"
 };
 
-const mensagemInicial = `${icones.robo} Ola! Sou o Atlas AI Assistant. Como posso ajudar?`;
+const mensagemInicial = `${icones.robo} Ola! Sou o Atlas AI Assistente. Como posso ajudar?`;
 
 function horaAtual() {
     const agora = new Date();
