@@ -1,0 +1,28 @@
+{
+  "name": "projeto_ia",
+  "version": "1.0.0",
+  "description": "Chatbot IA com Gemini/OpenAI, detecção de intenção e múltiplos serviços",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --use-system-ca server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check public/script.js && node --check services/ai.js && node --check services/currency.js && node --check services/gemini.js && node --check services/memory.js && node --check services/news.js && node --check services/openai.js && node --check services/pdf.js && node --check services/tts.js && node --check services/weather.js && node --check routes/chat.js && node --check routes/moedas.js && node --check routes/noticias.js && node --check routes/pdf.js && node --check routes/tempo.js && node --check routes/tts.js && node --check utils/cidades.js && node --check utils/datas.js && node --check utils/logger.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": ["ia", "chatbot", "gemini", "openai", "express"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^2.10.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^7.1.5",
+    "joi": "^17.11.0",
+    "multer": "^2.2.0",
+    "openai": "^6.45.0",
+    "pdf-parse": "^2.4.5"
+  }
+}

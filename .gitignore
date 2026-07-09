@@ -1,0 +1,17 @@
+# Segredos locais (manter apenas o modelo sem chaves reais)
+.env
+.env.*
+!.env.example
+
+# Dependencias e dados gerados
+node_modules/
+uploads/
+data/*.json
+logs/
+
+# Ficheiros temporarios e do sistema
+resultados*.txt
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
